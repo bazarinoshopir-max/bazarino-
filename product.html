@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<title>محصول | BAZARINO</title>
+<link rel="icon" href="assets/logo.png">
+<link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@400;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="container header-top">
+    <a class="brand" href="index.html">
+      <img src="assets/logo.png" alt="Bazarino Logo">
+      <div class="brand-text"><h1>BAZARINO</h1><span>bazarinoshop</span></div>
+    </a>
+    <a href="index.html" class="contact-btn">بازگشت به فروشگاه</a>
+  </div>
+</header>
+
+<main class="container" id="productWrap">
+  <div class="product-page">
+    <div class="gallery" id="gallery"></div>
+    <div class="product-detail">
+      <h2 id="pName">در حال بارگذاری...</h2>
+      <div class="price-row" id="pPrice"></div>
+      <div class="stock" id="pStock"></div>
+      <div class="opt-group">
+        <label>رنگ‌بندی</label>
+        <div id="colorOptions"></div>
+      </div>
+      <div class="opt-group">
+        <label>سایز</label>
+        <div id="sizeOptions"></div>
+      </div>
+      <button class="buy-btn" id="buyBtn">خرید محصول</button>
+    </div>
+  </div>
+</main>
+
+<footer class="site-footer">
+  <div>© BAZARINO ONLINE SHOP — bazarinoshop</div>
+</footer>
+
+<!-- مودال خرید -->
+<div class="modal-overlay" id="buyModal">
+  <div class="modal-box">
+    <button class="modal-close" data-close>×</button>
+    <h3>سفارش از طریق</h3>
+    <button class="buy-option telegram" id="buyTelegram">خرید از تلگرام</button>
+    <button class="buy-option rubika" id="buyRubika">خرید از روبیکا</button>
+    <button class="buy-option bale" id="buyBale">خرید از بله</button>
+  </div>
+</div>
+
+<script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-app-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-firestore-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-auth-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-storage-compat.js"></script>
+<script src="js/firebase-config.js"></script>
+<script src="js/product.js"></script>
+</body>
+</html>
